@@ -2,7 +2,7 @@ import org.junit.*;
 import java.util.*;
 import org.junit.rules.ErrorCollector;
 
-public class UrlValidatorUnitTest {	
+public class UrlValidatorUnitTests {	
 	boolean printFailureInfo = true; // set to true to print details about failures to the console
 	
 	@Rule
