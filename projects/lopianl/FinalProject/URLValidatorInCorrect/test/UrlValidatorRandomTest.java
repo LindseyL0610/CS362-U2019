@@ -2,8 +2,7 @@ import junit.framework.TestCase;
 
 public class UrlValidatorRandomTest extends TestCase {
 
-	   private final boolean baleteMe = false;
-	   private final boolean baleteYou = false;//print index that indicates current scheme,host,port,path, query test were using.
+	   private final boolean printFailureInfo = true; //print additional info to console. Set false to remove
 
 	   public UrlValidatorRandomTest(String testName) {
 	      super(testName);
@@ -11,11 +10,8 @@ public class UrlValidatorRandomTest extends TestCase {
 
 	   @Override
 	protected void setUp() {
-		   if (baleteMe) {
-		   }
-		   else if (baleteYou) {
-		   }
-		   
+		   if (printFailureInfo) {
+		   }		   
 	   }
 
 	   /**
