@@ -49,11 +49,13 @@ public class UrlValidatorRandomTest extends TestCase {
 			String url = urlBuilder.toString();
 			
 			boolean result = urlVal.isValid(url); // Test isValid with composite url
+			//boolean result = urlVal.isValid("ftp://www.google.com.:65535/test1/file");
 	
 			// Print URL components if error encountered and additional info is desired
 			if (printFailureInfo && !errorFound && result != expected) {
 				errorFound = true;
 				System.out.println("Failure Encountered. Additional Trace Info:");
+				System.out.printf("Case #: %d\n", numCase);
 				System.out.printf("expected: %b, result: %b\n", expected, result);
 				if (addOptions) {
 					System.out.println("Options: ALLOW_ALL_SCHEMES, ALLOW_2_SLASHES, NO_FRAGMENTS\n");
